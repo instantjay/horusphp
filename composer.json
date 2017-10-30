@@ -1,5 +1,5 @@
 {
-    "name": "horusphp",
+    "name": "instantjay/horusphp",
     "description": "A collection of libraries for detecting bots/humans and quickly validating data.",
     "license": "MIT",
     "autoload": {
