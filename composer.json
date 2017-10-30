@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {"instantjay\\horusphp\\": "src"}
+    },
+    "require": {
+        "gregwar/captcha": "1.*",
+        "egulias/email-validator": "2.*",
+        "respect/validation": "1.*",
+        "jenssegers/agent": "2.*"
+    }
+}
