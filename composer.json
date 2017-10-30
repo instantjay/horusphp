@@ -1,4 +1,7 @@
 {
+    "name": "horusphp",
+    "description": "A collection of libraries for detecting bots/humans and quickly validating data.",
+    "license": "MIT",
     "autoload": {
         "psr-4": {"instantjay\\horusphp\\": "src"}
     },
