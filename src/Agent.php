@@ -43,4 +43,11 @@ class Agent {
     public function isDesktop() {
         return $this->agent->isDesktop();
     }
+
+    /**
+     * @return null|string
+     */
+    public function getUserAgent() {
+        return $this->agent->getUserAgent();
+    }
 }
