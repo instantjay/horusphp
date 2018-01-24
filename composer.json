@@ -9,6 +9,7 @@
         "gregwar/captcha": "1.*",
         "egulias/email-validator": "2.*",
         "respect/validation": "1.*",
-        "jenssegers/agent": "2.*"
+        "jenssegers/agent": "2.*",
+        "cocur/slugify": "3.*"
     }
 }
