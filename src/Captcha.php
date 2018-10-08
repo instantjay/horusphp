@@ -50,7 +50,7 @@ class Captcha
 
         $builder->setDistortion(true);
         $builder->setMaxBehindLines($maxLines);
-        $builder->setMaxBehindLines($maxLines);
+        $builder->setMaxFrontLines($maxLines);
 
         //
         $builder->build($width, $height);
