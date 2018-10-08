@@ -24,9 +24,10 @@ class Captcha
      * @param int $height
      * @param string[] $backgroundImageAbsolutePaths
      * @param Rgb $textColor
+     * @param int $maxLines
      * @return string
      */
-    public function generateInlineCaptcha($length = 7, $width = 200, $height = 200, array $backgroundImageAbsolutePaths = [], Rgb $textColor = null)
+    public function generateInlineCaptcha($length = 7, $width = 200, $height = 200, array $backgroundImageAbsolutePaths = [], Rgb $textColor = null, $maxLines = 1)
     {
         //
         $phraseBuilder = new PhraseBuilder();
@@ -48,6 +49,8 @@ class Captcha
         }
 
         $builder->setDistortion(true);
+        $builder->setMaxBehindLines($maxLines);
+        $builder->setMaxBehindLines($maxLines);
 
         //
         $builder->build($width, $height);
