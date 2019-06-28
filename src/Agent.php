@@ -2,11 +2,15 @@
 
 namespace instantjay\horusphp;
 
+use Symfony\Component\HttpFoundation\Request;
+
 class Agent {
     protected $agent;
 
-    public function __construct() {
-        $this->agent = new \Jenssegers\Agent\Agent();
+    public function __construct(Request $request = null) {
+        $headers = $request ? $request->headers->all() : null;
+
+        $this->agent = new \Jenssegers\Agent\Agent($headers);
     }
 
     /**
